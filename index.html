@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+
+        <script src="/assets/js/index.js"></script>
+        <link rel="stylesheet" href="/assets/css/index.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/assets/img/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>                   
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello there, I'm  <span>Avish T S</span><br></h1>
+            </div>
+        </div>
+<!-- -------about-------- -->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assets/img/about-me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+            
+                    <p>Hello and welcome! I am studying Computer Science at Sri Siddhartha Institute of Technology,
+                       seeking for web development roles at work. My interests include web designing, photography 
+                       and other creative stuff!<br><br> Take a look at my work through the tabs.</p>
+
+                     <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('academics')">Academics</p> 
+                       <p class="tab-links" onclick="opentab('skills')">Skills</p> 
+
+                     </div>
+                     <div class="tab-contents active-tab" id="academics">
+                        <ul>
+                            <li><span>Graduation Details: Sri Siddhartha Institute of Technology, Tumakuru</span><br>August 2020 - Present<br>
+                                B.E in Computer Science and Engineering<br>
+                                CGPA: 7.42/10</li>
+                            <li><span>Senior Secondary: Vidyaniketan PU College, Tumakuru</span><br>May 2019 - May 2020<br>
+                                Class XII in Science (PCMC)<br>
+                                Percentage: 84
+                               </li>
+                            <li><span>Higher Secondary: TVS School, Tumakuru
+                            </span><br>March 2017 - March 2018<br>
+                            Percentage: 81.4</li>
+
+                        </ul>
+
+                     </div>
+
+                     <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Skill 1:</span><br>Web: HTML, CSS, JavaScript</li>
+                            <li><span>Skill 2:</span><br>Machine Learning Using Python</li>
+                            <li><span>Known Programming Languages:</span><br>C, C++, Java, Python</li>
+
+                        </ul>
+
+                     </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Education Website</h2>
+                    <p>A High Quality User Interface and Responsive Website<br><br>
+                       Tools: HTML, CSS, JavaScript, Bootstrap
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Portfolio Page</h2>
+                    <p>About me and my interests <br><br>
+                       Tools: HTML, CSS, JavaScript, Bootstrap</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Emojify using Face Recognition</h2>
+                    <p>A machine learning project that makes use of our own customized
+                       emojis to communicate between users using Emoticons.<br><br>
+                       Tools: Jupyter Notebook, Python
+                       </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------portfolio---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assets/certimgs/iot.png">
+                    <div class="layer">
+                        <h3>IoT & UI/UX</h3>
+                        <p>To connect millions of devices together through the Internet and discover how to apply UI/UX to IoT devices</p>
+                        <a href="/assets/springboard/IoT & ui ux.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/certimgs/cybersecurity.png">
+                    <div class="layer">
+                        <h3>Trends in Cybersecurity</h3>
+                        <p>A practice of protecting systems, networks, and programs from cyber threats and exploits</p>
+                        <a href="/assets/springboard/Cybersecurity.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/certimgs/blockchain.png">
+                    <div class="layer">
+                        <h3>Blockchain</h3>
+                        <p>To gain the knowledge about the blockchain technology with various blockchain platforms</p>
+                        <a href="/assets/springboard/blockchain.pdf"><i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="/assets/springboard/Infosys Springboard.pdf" class="btn">See more </a> 
+        </div>
+    </div>
+<!-------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane">Email:</i>avishts18@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone">Phone:</i>+91 7338679989</p>
+                <div class="social-icons">
+                    <a href="https://m.facebook.com/profile.php/?id=100063452117102&name=xhp_nt__fb__action__open_user"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/avish_ts?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="assets/Avish Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>          
+    var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemeu.style.right = "0";
+}
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwEb_J5Q0vFzLFN9L2O71VzVa4gtwPPLndW0q281f0FtKhLUjbGvJ5ipOvwMlcjdk0hfA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
